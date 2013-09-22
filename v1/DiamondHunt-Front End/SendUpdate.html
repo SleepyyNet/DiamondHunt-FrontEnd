@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Send form </title>
+		
+		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.1.1/css/bootstrap.min.css">
+		
+		<style>
+			h1{
+				text-align: center;
+			}
+			#maindiv{
+				position:absolute;
+				left:25%;
+			}
+		</style>
+	</head>
+	
+	<body>on
+		<h1> Update Points </h1>
+		
+		<div id="maindiv">
+		<form action="http://localhost:8888/l4/public/api/v1/sendStat" method="POST" class = "table striped" onSubmit="DisplayLeaderboard.html" >
+			<label> Enter Username: </label>
+			<input type = "text" name="username" /> 
+			
+			<label> Enter Stat Name: </label>
+			<input type = "text" name="statname" /> 
+			
+			<label> Enter Stat Value: </label>
+			<input type = "number" name="statvalue" /> 
+			<hr/>
+			
+			<input type = "submit" name="submit" value = "Submit"/>  
+		</form>
+		</div>
+	</body>
+
+</html>
